@@ -48,9 +48,8 @@ Além da anotação, organizamos as imagens e seus arquivos de anotação de man
 
     -  label
         
-        - marked_images
         
-            - corte
-            - nao-corte
+        - corte
+        - nao-corte
 
 Esse dataset com as anotações está localizado no seguinte drive: https://drive.google.com/drive/folders/1LP2fwRDOkpU33mrahcR7Tl33cSbVDlqk?usp=sharing 

@@ -5,7 +5,7 @@ import numpy as np
 
 # Indicar o caminho do dataset com as imagens originais e onde ficarão armazenadas as imagens modificadas
 root_dir = './data/no_label'
-source_dir = os.path.join(root_dir, 'dataset')
+source_dir = os.path.join(root_dir, 'collected_images')
 resized_dir = os.path.join(root_dir, 'resized_data')    
 segmented_dir = os.path.join(root_dir, 'segmented_dir')    
 

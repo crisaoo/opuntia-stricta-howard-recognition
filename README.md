@@ -73,3 +73,40 @@ Além da anotação, organizamos as imagens e seus arquivos de anotação de man
         - nao-corte
 
 Esse dataset com as anotações está localizado no seguinte drive: https://drive.google.com/drive/folders/1LP2fwRDOkpU33mrahcR7Tl33cSbVDlqk?usp=sharing 
+
+
+&nbsp;
+
+
+## Treinamento e Avaliação do Modelo
+Este tópico aborda o código responsável pelo treinamento e avaliação de um modelo de aprendizado de máquina, usando um conjunto de dados anotado e pré-processado. 
+
+O modelo em questão é um classificador Random Forest, e o conjunto de dados é composto por imagens de palmas anotadas com as classes "corte" ou "nao-corte".
+
+### Carregamento e Pré-processamento dos Dados
+
+O código começa carregando as anotações do conjunto de dados YOLO a partir de arquivos de texto. As anotações incluem informações sobre a classe (corte ou nao-corte) e as coordenadas associadas à localização da palma na imagem. As classes e coordenadas são armazenadas nos arrays labels e features, respectivamente.
+
+### Divisão dos Dados e Treinamento do Modelo
+Em seguida, os dados são divididos em conjuntos de treinamento e teste, utilizando 70% dos dados para treinamento e 30% para teste. Isso é feito usando a função train_test_split do scikit-learn. Um classificador Random Forest é criado e treinado usando o conjunto de treinamento.
+
+### Avaliação do Modelo
+Após o treinamento, o modelo é testado no conjunto de teste, e métricas de avaliação são calculadas. As métricas incluem:
+
+- Acurácia: A porcentagem de previsões corretas em relação ao total de previsões.
+- F1 Score: Uma média ponderada da precisão e da revocação, fornecendo um equilíbrio entre ambas.
+- Precisão: A porcentagem de verdadeiros positivos em relação ao total de previsões positivas.
+- Revocação: A porcentagem de verdadeiros positivos em relação ao total de casos positivos.
+
+A matriz de confusão é calculada para avaliar o desempenho do modelo em diferentes classes.
+
+### Visualização dos Resultados
+
+
+Por fim, são exibidos os resultados em termos de métricas de avaliação e uma matriz de confusão. Além disso, são apresentados gráficos para visualizar as métricas de avaliação, incluindo um gráfico de barras e um gráfico de matriz de confusão.
+
+Para isso, execute o seguinte código no terminal:
+
+```
+python random_forest.py
+```

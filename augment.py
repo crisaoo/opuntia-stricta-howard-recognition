@@ -1,9 +1,5 @@
 import cv2 
 import os
-import matplotlib.pyplot as plt
-from PIL import Image
-import numpy as np
-from matplotlib import pyplot as plt
 
 root_dir = './dataset'
 resized_dir = os.path.join(root_dir, 'resized_data')    

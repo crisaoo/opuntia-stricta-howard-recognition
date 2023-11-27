@@ -30,10 +30,8 @@ height_mean = sum(height) / len(height)
 print(f"Média de largura: {int(width_mean)}")
 print(f"Média de altura: {int(height_mean)}")
 
-width = int(width_mean)
-height = int(height_mean)
 # Definir a largura e a altura para qual as imagens serão redimensionadas
-dim = (width, height)
+dim = (width_mean, height_mean)
 
 
 # Criar a pasta para armazenar as imagens redimensionadas (caso nao exista)

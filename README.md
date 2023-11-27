@@ -35,6 +35,26 @@ Os seguintes datasets resultantes podem ser encontradas nos seguintes links resp
 - https://drive.google.com/drive/folders/1HutWMJoTdyaSudXX48aJrUQCahMh9jDC?usp=sharing
 - https://drive.google.com/drive/folders/1qF-X2w2N-W8e91k52-LCiSSbReS-TN24?usp=sharing 
 
+
+
+&nbsp;
+
+
+## Augmentação de dados
+
+A fim de diversificar o dataset devido as condições não ideais para a coleta de dados, fez-se necessário a utilização de algum método para augmentar o dataset.
+
+Para isso, foi utilizado o script `augment.py`. O objetivo principal desse algoritmo é alterar o contraste e brilho das imagens coletadas para simular um dia mais ensolarado. 
+
+Para executar o código, basta executar o código abaixo no terminal:
+
+```
+python augment.py
+```
+
+Como resultado, o dataset foi populado com algumas imagens, o que resultou em um conjunto de dados composto por 200 imagens.
+
+
 &nbsp;
 
 
